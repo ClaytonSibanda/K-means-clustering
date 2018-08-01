@@ -1,3 +1,4 @@
 *.txt
 *.cmake
 /cmake-build-debug
+/.idea
