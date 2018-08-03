@@ -7,6 +7,7 @@
 
 using namespace std;
 vector<vector<int> > clusters;
+vector<vector<int> > previous;
 vector<int> c1;
 vector<int> c2;
 vector<int> c3;
@@ -76,7 +77,8 @@ void SBNCLA002::assign(vector< vector<int> > &data){
 
     if( !clusters.empty()){
        // cout<<"centroids new"<<endl;
-        SBNCLA002::popCentroids(data);//new centroids
+       previous=clusters;
+       SBNCLA002::popCentroids(data);//new centroids
 //        for(auto cent:centroids)
 //            cout<<cent[0]<<" cent is "<<cent[1]<<endl;
     }

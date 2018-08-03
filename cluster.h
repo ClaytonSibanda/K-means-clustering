@@ -6,7 +6,7 @@
 #define CLUSTER_H
 
 extern std::vector<std::vector<int> > clusters;
-
+extern std::vector<std::vector<int> > previous;
 extern std::vector<std::vector<double> > centroids;
 namespace SBNCLA002{
   //defining a vector of clusters
